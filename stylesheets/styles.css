@@ -9,14 +9,6 @@ body {
   font-weight:300;
 }
 
-a{
-	color: #283593;
-	text-decoration:underline;
-}
-a:hover{
-	color: #3D5AFE;
-}
-
 h1, h2, h3, h4, h5, h6 {
   color:#1A237E;
   margin:0 0 24px;
@@ -42,7 +34,7 @@ h3, h4, h5, h6 {
   color:#1A237E;
 
 }
-/*
+
 a {
   color:#39c;
   font-weight:400;
@@ -55,7 +47,7 @@ a small {
   margin-top:-0.6em;
   display:block;
 }
-*/
+
 .wrapper {
   width:860px;
   margin:0 auto;
@@ -193,29 +185,36 @@ footer {
   position:fixed;
   bottom:50px;
 }
-/*
+
 @media print, screen and (max-width: 960px) {
+
   
   div.wrapper {
     width:auto;
     margin:0;
+	
+	
   }
   
   header, section, footer {
-    float:none;
+    /*float:none;*/
     position:static;
     width:auto;
   }
   
   header {
-    padding-right:320px;
+	width: 100%;
+    /*padding-right:0px;*/
+	padding-bottom: 10px;
+	
   }
-  
+ 
   section {
     border:1px solid #e5e5e5;
     border-width:1px 0;
     padding:20px 0;
     margin:0 0 20px;
+	
   }
   
   header a small {
@@ -227,16 +226,36 @@ footer {
     right:50px;
     top:52px;
   }
+
+  #Picture{
+	float: right;
+	position: static;
+	right: 15px;
+	
+  }
+  #Datos{
+	float: left;
+	padding-right: 15px;
+	
+  }
+  #Nombre{
+	float: none;
+	}
+ 
+ 
 }
-*/
-/*
-@media print, screen and (max-width: 720px) {
+
+
+@media screen and (max-width: 720px) {
+
+
   body {
     word-wrap:break-word;
   }
   
   header {
     padding:0;
+	width: 100%;
   }
   
   header ul, header p.view {
@@ -246,10 +265,19 @@ footer {
   pre, code {
     word-wrap:normal;
   }
+  
+  #Picture{
+	float: none;
+	padding-right: 0px;
+  }
+  #Datos{
+	float: none;
+	
+  }
 }
 
 
-@media print, screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
   body {
     padding:15px;
   }
@@ -258,7 +286,7 @@ footer {
     display:none;
   }
 }
-*/
+
 @media print {
   body {
     padding:0.4in;
@@ -267,16 +295,32 @@ footer {
   }
 }
 
-/*modificaciones by Moya */
-p{
+/*modifications by Moya */
+  img{
+	max-height: 230px;
+	
+	
+  }
+
+p, dd{
 	color:#444;
 	padding-left: 30px;
 }
 
-#Datos{
-	
-	padding-left: 0px;
+a{
+	color: #283593;
+	text-decoration:underline;
 }
+a:hover{
+	color: #3D5AFE;
+}
+/*
+@media print{
+	img{
+	 float: right;
+	 }
+}
+*/
 
 
 
