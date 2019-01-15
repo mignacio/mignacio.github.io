@@ -1,0 +1,415 @@
+/* =================================
+------------------------------------
+  Template CVVars "Luke"
+  Versión: 1.0 
+ ------------------------------------ 
+ ====================================*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+
+html,
+body {
+	height: 100%;
+	font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #40424a;
+	margin: 0;
+	font-weight: 500;
+	font-family: 'Oswald', sans-serif;
+
+
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	color: #808181;
+	line-height: 1.8;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+input:focus,
+select:focus,
+button:focus,
+textarea:focus {
+	outline: none;
+}
+
+a:hover,
+a:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+ul,
+ol {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+hr {
+	width: 80%;
+	background-color: #91abb5;
+	height: 2px;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+	box-shadow: none;
+}
+
+
+/* Sección datos generales */
+
+.infoGeneral {
+	position: fixed;
+	background-color: #91abb5;
+	padding-left: 30px;
+	height: 100%;
+}
+
+.infoGeneral h2 {
+	margin: 0.7em;
+	text-align: center;
+}
+
+.infoGeneral p  {
+	color: #fff;
+	text-align: center;
+	line-height: 1.1em;
+
+}
+.infoGeneral ul li  {
+	color: #fff;
+
+}
+
+.infoGeneral img {
+	margin-top: 2em;
+	width:300px;
+    height:300px;
+    border-radius:150px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.datos span {
+	color: #40424a;
+	display: inline-block;
+	min-width: 220px;
+	font-weight: 600;
+}
+
+
+/* Sección datos laborales */
+
+.infoLaboral {
+	float: right;
+	margin-top: 2em;
+	padding-right: 5em;
+	padding-left: 5em;
+}
+
+.infoLaboral h2 {
+	text-align: center;
+	text-decoration: underline;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+
+
+/* Línea del tiempo */ 
+
+.lineaTiempo {
+	list-style: none;
+	margin-left: 60px;
+	padding-left: 110px;
+	border-left: 2px solid #40424a;
+}
+
+.lineaTiempo li {
+	margin-bottom: 50px;
+	position: relative;
+}
+
+.lineaTiempo li:last-child {
+	margin-bottom: 0;
+}
+
+.lineaTiempo li:after {
+	position: absolute;
+	content: '';
+	width: 15px;
+	height: 15px;
+	border: 2px solid #40424a;
+	border-radius: 50px;
+	background: #91abb5;
+	top: 30px;
+	left: -118px;
+}
+
+.lineaTiempo h2 {
+	font-size: 72px;
+	margin-bottom: 10px;
+}
+
+.lineaTiempo h4 {
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #808181;
+	margin-top: 10px;
+	margin-bottom: 45px;
+}
+
+.lineaTiempo p {
+	margin-bottom: 0;
+}
+
+
+
+/* Barra progreso */
+.item-proceso {
+	margin-bottom: 35px;
+	position: relative;
+}
+
+.item-proceso p {
+	color: #40424a;
+	margin-bottom: 0;
+	font-weight: 600;
+}
+
+.estilo-barra {
+	display: block;
+	height: 2px;
+	position: relative;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.barra {
+	position: absolute;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: #40424a;
+}
+
+.barra span {
+	position: absolute;
+	right: 0;
+	bottom: -30px;
+	color: #40424a;
+	font-weight: 600;
+}
+
+
+/* Idiomas */
+.progreso-idiomas {
+	max-width: 280px;
+	list-style: none;
+}
+
+.progreso-idiomas li {
+	font-size: 1em;
+	position: relative;
+	padding-right: 150px;
+	margin-bottom: 30px;
+}
+
+.progreso-idiomas .idioma {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.progreso-idiomas .idioma span {
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	margin-right: 18px;
+	border-radius: 12px;
+	background: #40424a;
+}
+
+.progreso-idiomas .idioma span.fade-ele {
+	background: #cacaca;
+}
+
+
+.icon-skill {
+	text-align: center;
+	display: inline-block;
+	margin-right: 60px;
+}
+
+
+.icon-skill i {
+	font-size: 60px;
+	color: #40424a;
+}
+
+.imprimir{
+	position: fixed;
+  right: 0;
+  width: 85px;
+  height: 85px;
+  background-color: #91abb5;
+  margin-top: 200px;
+  padding: 10px;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(107, 100, 99, 0.75);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(107, 100, 99, 0.75);
+  box-shadow: 0px 3px 5px 0px rgba(107, 100, 99, 0.75);
+  z-index: 1000;
+   }
+	
+	.imprimir i{
+		font-size: 60px;
+		color: #fff;
+	}
+
+	.imprimir:hover {
+  background-color: #2e353d; }
+
+.credits p {
+font-size: 0.3em;
+}
+
+
+/* /////////// Responsive /////////// */
+@media only screen and (max-width: 1300px) {
+
+
+
+.infoGeneral {
+	padding-top: 0;
+
+}
+
+.infoGeneral img {
+
+	width:200px;
+    height:200px;
+    border-radius: 100px;
+}
+
+.infoGeneral h2 {
+	margin: 0.1em;
+}
+
+
+.infoLaboral {
+	margin-top: 0;
+	padding: 1em;
+	}
+}
+
+
+@media only screen and (max-width: 767px) {
+
+	.imprimir {
+    position: fixed;
+    right: 0;
+    width: 65px;
+    height: 65px;
+    margin-top: 0;
+    padding: 5px;
+    bottom: 25px; }
+
+    .imprimir i {
+    	font-size: 50px;
+    }
+
+	.infoGeneral {
+		position: relative;
+		height: auto;
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
+
+
+.infoGeneral h2 {
+	margin: 0.2em;
+	text-align: center;
+}
+
+.infoGeneral p  {
+	color: #fff;
+	text-align: center;
+
+}
+.infoGeneral ul li  {
+	color: #fff;
+
+}
+
+.infoGeneral img {
+	margin-top: 0;
+	width:200px;
+    height:200px;
+    border-radius:100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.infoLaboral {
+	padding: 1em;
+	padding-right: 1em;
+	margin-top: 0;
+}
+
+
+.lineaTiempo {
+	list-style: none;
+	margin-left: 20px;
+	padding-left: 50px;
+	border-left: 2px solid #40424a;
+}
+
+.lineaTiempo li {
+	margin-bottom: 80px;
+	position: relative;
+}
+
+.lineaTiempo li:last-child {
+	margin-bottom: 0;
+}
+
+.lineaTiempo li:after {
+	position: absolute;
+	content: '';
+	width: 15px;
+	height: 15px;
+	border: 2px solid #40424a;
+	border-radius: 50px;
+	background: #91abb5;
+	top: 30px;
+	left: -58px;
+}
+
+
+}
