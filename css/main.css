@@ -1,13 +1,13 @@
 /* =================================
 ------------------------------------
   Template CVVars "Luke"
-  Versión: 1.0 
- ------------------------------------ 
+  Versión: 1.0
+ ------------------------------------
  ====================================*/
 
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400');
 
 
 html,
@@ -26,8 +26,6 @@ h6 {
 	margin: 0;
 	font-weight: 500;
 	font-family: 'Oswald', sans-serif;
-
-
 }
 
 h2 {
@@ -141,7 +139,7 @@ hr {
 
 
 
-/* Línea del tiempo */ 
+/* Línea del tiempo */
 
 .lineaTiempo {
 	list-style: none;
@@ -170,6 +168,14 @@ hr {
 	top: 30px;
 	left: -118px;
 }
+.lineaTiempo p{
+	text-transform: uppercase;
+	font-weight: 300;
+	font-family: 'Oswald', sans-serif;
+}
+.lineaTiempo h3{
+	margin-bottom: 10px;
+}
 
 .lineaTiempo h2 {
 	font-size: 72px;
@@ -181,7 +187,10 @@ hr {
 	text-transform: uppercase;
 	color: #808181;
 	margin-top: 10px;
-	margin-bottom: 45px;
+	margin-bottom: 20px;
+}
+.lineaTiempo h5 {
+	margin-bottom: 5px;
 }
 
 .lineaTiempo p {
@@ -260,6 +269,19 @@ hr {
 }
 
 
+.progreso-idiomas h3 {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+.progreso-idiomas h4 {
+	font-size: 16px;
+	color: #808181;
+	margin-top: 10px;
+	margin-bottom: 45px;
+}
+
+
 .icon-skill {
 	text-align: center;
 	display: inline-block;
@@ -285,7 +307,7 @@ hr {
   box-shadow: 0px 3px 5px 0px rgba(107, 100, 99, 0.75);
   z-index: 1000;
    }
-	
+
 	.imprimir i{
 		font-size: 60px;
 		color: #fff;
@@ -302,6 +324,18 @@ font-size: 0.3em;
 /* /////////// Responsive /////////// */
 @media only screen and (max-width: 1300px) {
 
+	.imprimir {
+		position: fixed;
+		right: 0;
+		width: 65px;
+		height: 65px;
+		margin-top: 0;
+		padding: 5px;
+		bottom: 25px; }
+
+		.imprimir i {
+			font-size: 50px;
+		}
 
 
 .infoGeneral {
@@ -410,6 +444,5 @@ font-size: 0.3em;
 	top: 30px;
 	left: -58px;
 }
-
 
 }
