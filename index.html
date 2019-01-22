@@ -4,8 +4,8 @@
 	<title>Ignacio Moya</title>
 	<link rel="icon" href="img/carnet.jpg">
 	<meta charset="UTF-8">
-	<meta name="description" content="Civic - CV Resume">
-	<meta name="keywords" content="resume, civic, onepage, creative, html">
+	<meta name="description" content="CV de Ignacio Moya">
+	<meta name="keywords" content="ingeniero, engineer, embedded, software, dev">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- CSS -->
@@ -162,15 +162,32 @@
 
 
 <a href="#">
-<div class="imprimir">
+<div class="imprimir" id="imp">
   <i class="fa fa-print" title="Imprimir CV">
 </div>
 </a>
 
 	<!-- JS -->
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/printThis.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/main.js"></script>
+
+	<script>
+		$('#imp').on("click", function () {
+			$('.infoLaboral').printThis({
+				debug: true,
+				importCSS: false,
+				importStyle: true,
+				loadCSS: 'css/main.css'
+			});
+		});
+	</script>
+
+
 
 </body>
 </html>
